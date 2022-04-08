@@ -72,10 +72,8 @@ parse_git_fg() {
 PS1+="\$(git branch 2> /dev/null | grep '^*' | colrm 1 2 | xargs -I BRANCH echo -n \"" # check if git branch exists
 PS1+="\$(parse_git_bg)$BAR_CONNECT " # end FILES container / begin BRANCH container
 PS1+="$BLACK BRANCH"  # print current git branch
-PS1+="$RESET\$(parse_git_fg)\")$NO_COLOR_BG$BAR_CONNECT" # end last container (either FILES or BRANCH)
+PS1+="$RESET\$(parse_git_fg)\")$NO_COLOR_BG$BAR_CONNECT\n" # end last container (either FILES or BRANCH)
 
-
-PS1+="$NO_COLOR $WHITE--\n"
 PS1+="$GRADIENT_2│"
 PS1+="$NO_COLOR  $LIGHT_BLUE("
 PS1+="$(__clock)"
