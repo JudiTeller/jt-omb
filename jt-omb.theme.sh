@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 
+_time() {
+  THEME_CLOCK_FORMAT="%H:%M"
+  clock_prompt
+}
+
 __clock() {
   local LIGHT_BLUE="\[\033[1;34m\]"
   if [[ "${THEME_SHOW_CLOCK}" = "true" ]]; then
-    echo "$(__tonka_time)${NO_COLOR}"
+    echo "$(_time)${NO_COLOR}"
   fi
 }
 
