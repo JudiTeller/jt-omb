@@ -10,4 +10,4 @@ And also put it as the active font in your terminal.
 The theme folder goes into ```~/.oh-my-bash/themes/```
 
 
-![preview image](https://github.com/JudiTeller/jt-omb/blob/master/jt-omb.png?raw=true)
+![preview image](https://raw.githubusercontent.com/JudiTeller/jt-omb/feature/jt-omb.png)
