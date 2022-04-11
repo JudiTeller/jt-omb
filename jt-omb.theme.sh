@@ -35,10 +35,8 @@ local ORANGE_BG="\[\033[48;5;130m\]"
 local INFO_COLOR="\[\033[38;5;85m\]"
 local GRADIENT_1="\[\033[38;5;92m\]"
 local GRADIENT_2="\[\033[38;5;129m\]"
-local GRADIENT_3="\[\033[38;5;129m\]"
-local GRADIENT_4="\[\033[38;5;164m\]"
-local GRADIENT_5="\[\033[38;5;165m\]"
-local GRADIENT_6="\[\033[38;5;200m\]"
+local GRADIENT_3="\[\033[38;5;165m\]"
+
 
 local BAR_START=""
 local BAR_CONNECT=""
@@ -82,7 +80,7 @@ PS1+="$RESET\$(parse_git_fg)\")$NO_COLOR_BG$BAR_CONNECT\n" # end last container 
 PS1+="$GRADIENT_2│"
 PS1+="$NO_COLOR  $LIGHT_BLUE("
 PS1+="$(__clock)"
-PS1+="$LIGHT_BLUE)\n$GRADIENT_3╰$GRADIENT_4─$GRADIENT_5─$GRADIENT_6─"
+PS1+="$LIGHT_BLUE)\n$GRADIENT_2╰$GRADIENT_2─$GRADIENT_3─$GRADIENT_3─"
 PS1+="$MAGENTA_L>_$NO_COLOR "
 
 PS2="$LIGHT_BLUE>$WHITE>>$NO_COLOR   "
